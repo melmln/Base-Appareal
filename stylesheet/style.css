@@ -184,7 +184,7 @@ button:hover {
 
 /* DESKTOP */
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     
 main {
     flex-direction: row-reverse;
