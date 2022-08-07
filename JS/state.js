@@ -6,8 +6,20 @@ form.addEventListener("submit", (e) => {  // Agrego evento submit al form que al
     validarEmail(valueEmail)
 })
 
+
 const validarEmail = (valueEmail) => {
     let regExp = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
     let validar = regExp.test(valueEmail)
-    validar ? (errorMessage.innerHTML = "", inputEmail.classList.remove("error")): (inputEmail.classList += " error", errorMessage.innerHTML = "Please provide a valid email")
+    if(validar){
+        errorMessage.innerHTML = ""
+        inputEmail.classList.remove("error") 
+        btnEmail.classList.remove("btnError")
+    } else {
+        inputEmail.classList += " error"
+        btnEmail.classList += " btnError"
+        errorMessage.innerHTML = "Please provide a valid email"
+    }
+
 }
+
+
