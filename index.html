@@ -7,6 +7,9 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <!-- CSS -->
   <link rel="stylesheet" href="stylesheet/style.css">
+  <!-- JS -->
+  <script defer src="JS/variables.js"></script>
+  <script defer src="JS/state.js"></script>
 </head>
 
 <body>
@@ -27,8 +30,11 @@
 
       <!-- Email -->
       <div class="input-container">
-        <input class="input-email" type="email" placeholder=" Email Address">
-        <button><img class="icon-arrow" src="/images/icon-arrow.svg" alt="icon-arrow"></button>
+        <form id="form" action="">
+          <input id="inputEmail" class="input-email" type="email" name="email" placeholder="Email Address">
+          <button id="btnEmail" type="submit"><img class="icon-arrow" src="/images/icon-arrow.svg" alt="icon-arrow"></button>
+        </form>
+        <span id="errorMessage"></span>
       </div>
 
     </div>
