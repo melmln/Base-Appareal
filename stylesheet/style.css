@@ -1,0 +1,233 @@
+/* FONTS */
+/* font-family: 'Josefin Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+/* RESET */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT */
+
+:root {
+/* Primary */
+--desaturatedRed: hsl(0, 36%, 70%);
+--softRed: hsl(0, 93%, 68%);
+/* Neutral */
+--darkGrayishRed: hsl(0, 6%, 24%);
+
+/* Gradients */
+--gradientWhite: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+--gradientRed: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    background-color: var(--gradientRed);
+}
+
+/* MOBILE FIRST */
+
+/* PRINCIPAL PAGE */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    margin: 10px;
+    padding: 35px 0;
+
+}
+
+.logo {
+    width: auto;
+    height: 1.4rem;
+}
+
+.banner-container {
+    content: url("/images/hero-mobile.jpg");
+}
+
+.welcome-container {
+    margin: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.welcome-container h1 {
+    display: flex;
+    flex-direction: column;
+    color: var(--darkGrayishRed);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h1 span {
+    color: var(--desaturatedRed);
+    font-weight: 300;
+}
+
+.welcome-container p {
+    color: var(--desaturatedRed);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    width: 20rem;
+    font-size: 14px;
+    margin: 0 3rem 1rem 3rem;
+}
+
+.input-container {
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-email {
+    padding: 15px 3.5rem;
+    border-radius: 3rem;
+    border: solid var(--desaturatedRed); 
+    border-width: 0.01px;
+    background-color: transparent;
+}   
+
+.input-email::placeholder {
+    color: var(--desaturatedRed);
+    position: absolute;
+    left: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    border-radius: 3rem;
+    border: none;
+    position: sticky;
+    right: 3.2rem;
+    height: 3rem;
+    padding: 12px 0;
+    width: 3.7rem;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 2px 5px 15px var(--desaturatedRed);
+}
+
+/* END PRINCIPAL PAGE */
+
+/* FOOTER */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ /* END MOBILE FIRST */
+
+/* DESKTOP */
+
+@media only screen and (min-width: 768px) {
+    
+main {
+    flex-direction: row-reverse;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    ;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: r;
+    align-items: center;
+    height: 4rem;
+    margin: 10px;
+    padding: 35px 0;
+}
+
+.logo {
+    width: auto;
+    height: 1.8rem;
+    margin-left: 15px;
+    position: absolute;
+    left: 0;
+    padding-left: 8rem;
+}
+
+.welcome-container {
+    align-items: center;
+    height: 35rem;
+    width: 100%;
+}
+
+.banner-container {
+    content: url("/images/hero-desktop.jpg");
+    height: 100%;
+    position: relative;
+    left: 20px;
+}
+
+.welcome-container h1 {
+    line-height: 3.5rem;
+    font-size: 3rem;
+    text-align: initial;
+    padding: 0 14rem;
+}
+
+.welcome-container p {
+    text-align: initial;
+    padding: 2rem 0 0 3.2rem;  
+    width: 25rem;  
+}
+
+.input-container {
+    text-align: initial;
+    padding-left: 9rem;
+}
+
+.input-email {
+    padding: 15px 12rem 15px 0rem;
+}   
+
+
+button {
+    right: 52rem;
+    height: 3rem;
+    padding: 12px 0;
+    width: 5rem;
+}
+
+
+/* END PRINCIPAL PAGE */
+
+/* FOOTER */
+.attribution { 
+    text-align: initial; 
+    position: absolute;
+    top: 49rem;
+}
+}
+
+/* END DESKTOP */
