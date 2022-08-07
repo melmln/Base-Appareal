@@ -42,4 +42,4 @@ mponents.com/) - For styles
 
 - Frontend Mentor - [@melmln](https://www.frontendmentor.io/profile/melmln)
 - GitHub - [@melmln](https://github.com/melmln)
-- Linkedin - (https://www.linkedin.com/in/melany-molina-verd%C3%BAn-126259240/)
+- Linkedin -(https://www.linkedin.com/in/melany-molina-verd%C3%BAn-126259240/)
