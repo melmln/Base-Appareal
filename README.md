@@ -36,7 +36,7 @@ mponents.com/) - For styles
 
 ### Links
 
-- Netlify - (https://storied-gumdrop-8c94c5.netlify.app/) 
+- Netlify - (https://comforting-licorice-0fa929.netlify.app) 
 
 ## Author
 
